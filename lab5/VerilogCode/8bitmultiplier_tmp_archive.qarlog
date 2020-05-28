@@ -1,0 +1,28 @@
+Quartus Prime Archive log --	U:/Desktop/8bitmultiplier/8bitmultiplier/8bitmultiplier_tmp_archive.qarlog
+
+Archive:	U:/Desktop/8bitmultiplier/8bitmultiplier/8bitmultiplier_tmp_archive.qar
+Date:		Tue Feb 18 11:39:01 2020
+Quartus Prime		18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+	=========== Files Selected: ===========
+U:/Desktop/8bitmultiplier/8bitmultiplier/8bitmultiplier.qpf
+U:/Desktop/8bitmultiplier/8bitmultiplier/8bitmultiplier.qsf
+U:/Desktop/8bitmultiplier/8bitmultiplier/control_unit.sv
+U:/Desktop/8bitmultiplier/8bitmultiplier/d_flip_flop.sv
+U:/Desktop/8bitmultiplier/8bitmultiplier/full_adder.sv
+U:/Desktop/8bitmultiplier/8bitmultiplier/hex_driver.sv
+U:/Desktop/8bitmultiplier/8bitmultiplier/nine_bit_adder.sv
+U:/Desktop/8bitmultiplier/8bitmultiplier/shift_register.sv
+U:/Desktop/8bitmultiplier/8bitmultiplier/testbench.sv
+U:/Desktop/8bitmultiplier/8bitmultiplier/top_level_unit.sv
+c:/intelfpga_lite/18.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 11 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Tue Feb 18 11:39:03 2020
+Source archive file:	U:/Desktop/8bitmultiplier/8bitmultiplier/8bitmultiplier_tmp_archive.qar
+Archive was extracted into	I:/385ABC/ipatel28_mshah201/
+		 - successfully.

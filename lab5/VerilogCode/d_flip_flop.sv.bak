@@ -1,0 +1,13 @@
+module d_flip_flop(input d, clk, reset, load, output q);
+
+	always_ff @ (posedge clk or posedge reset)
+	begin
+		if (reset)
+			q <= 1'b0;
+		else if (load)
+			q <= d;
+		else
+			q <= q;
+	end
+	
+endmodule

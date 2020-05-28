@@ -1,0 +1,101 @@
+module control_unit (input  clk, run, reset, clearALoadB,
+							output logic clearA, clearB, shift, addOrSub, loadA, loadB);
+
+	 enum logic [4:0] {ResetState, ClearedA, A, B, C, D, E, F, G, H, I, J} curr_state, next_state;
+
+    always_ff @ (posedge clk)  
+    begin
+        if (reset)    
+            curr_state <= ResetState;   	
+        else 
+				if (clearALoadB)
+					curr_state <= ClearedA;
+				else
+					curr_state <= next_state;
+    end
+
+    // Assign outputs based on state
+	always_comb
+    begin
+        
+		  next_state  = curr_state;
+		  $display("%d", curr_state);
+        unique case (curr_state) 
+				A:     next_state = B;
+            B :    if (Run)
+                       next_state = sure_cl;
+				sure_cl:	next_state = C;
+            C :    next_state = D;
+            D :    next_state = E;
+            E :    next_state = F;
+            F :    next_state = G;
+            G :    next_state = H;
+            H :    next_state = I;
+            I :    next_state = J;
+            J :    next_state = K;
+            K :    if (~Run) 
+                       next_state = B;
+							  
+        endcase
+   
+		  // Assign outputs based on ‘state’
+        case (curr_state) 
+	   	   A: 	// initial state- clear alll registers
+	         begin
+					 ClearA=1'b1; 
+					 ClearB=1'b1;
+					 Shift=1'b0; 
+					 Sub_Add=1'b0;
+					 LoadA=1'b0;
+					 LoadB=1'b0;
+		      end
+	   	   B: 	// clear A and load B or after one cycle, we go back
+	         begin
+					 ClearA=1'b1 & ClearA_LoadB; 
+					 ClearB=1'b0;
+					 Shift=1'b0; 
+					 Sub_Add=1'b0;
+					 LoadA=1'b0;
+					 LoadB=1'b1 & ClearA_LoadB;
+		      end
+				sure_cl: 	// after we have pressed run, make sure reg A is cleared
+	         begin
+					 ClearA=1'b1; 
+					 ClearB=1'b0;
+					 Shift=1'b0; 
+					 Sub_Add=1'b0;
+					 LoadA=1'b0;
+					 LoadB=1'b1 & ClearA_LoadB;
+		      end
+	   	   J: 	// load the 8's bit of register B into sub_add
+						// turn the sub mode on
+		      begin
+					 ClearA=1'b0; 
+					 ClearB=1'b0;
+					 Shift=1'b1; 
+					 Sub_Add=1'b1;
+					 LoadA=1'b1;
+					 LoadB=1'b0;
+		      end
+	   	   K: 	//halt
+		      begin
+					 ClearA=1'b0; 
+					 ClearB=1'b0;
+					 Shift=1'b0; 
+					 Sub_Add=1'b0;
+					 LoadA=1'b0;
+					 LoadB=1'b0;
+		      end
+	   	   default:  //default case
+		      begin 
+					 ClearA=1'b0; 
+					 ClearB=1'b0;
+					 Shift=1'b1; 
+					 Sub_Add=1'b0;
+					 LoadA=1'b1;
+					 LoadB=1'b0;
+		      end
+        endcase
+    end
+
+endmodule

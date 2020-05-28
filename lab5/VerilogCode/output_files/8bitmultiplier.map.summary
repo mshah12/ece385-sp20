@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Feb 25 13:44:27 2020
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : 8bitmultiplier
+Top-level Entity Name : top_level_unit
+Family : Cyclone IV E
+Total logic elements : 93
+    Total combinational functions : 93
+    Dedicated logic registers : 37
+Total registers : 37
+Total pins : 57
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

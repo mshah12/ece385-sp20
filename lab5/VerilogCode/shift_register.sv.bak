@@ -1,0 +1,11 @@
+module shift_register(input logic [7:0] dataIn, input logic clk, reset, load, shiftEnable, shiftIn,
+								output logic [7:0] dataOut, output logic shiftOut);
+								
+	always_ff @ (posedge clk)
+	begin
+	end
+								
+								
+								
+								
+endmodule
