@@ -1,0 +1,5 @@
+module 2_bit_mux(input logic A, B, Select, 
+						output logic [3:0] Sum);
+
+
+endmodule 

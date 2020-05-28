@@ -1,0 +1,66 @@
+module testbench_week2();
+
+timeunit 10ns; //half clock cycle for 10ns, #1 is one time unit 
+				
+timeprecision 1ns; //round amount of time to nearest decimal point
+
+ logic [15:0] S;
+ logic Clk, Reset, Run, Continue;
+ logic [11:0] LED;
+ logic [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6, HEX7;
+ logic CE, UB, LB, OE, WE;
+ logic [19:0] ADDR;
+ wire [15:0] Data;
+
+always
+begin:clock_gen
+#1 Clk = ~Clk;
+end
+
+initial 
+begin:Clock_init
+Clk = 0;
+end
+
+
+ lab6_toplevel test(.*);
+
+initial 
+begin
+
+
+Reset = 1'b0;
+#2
+Reset = 1'b1;
+#2
+Run = 1'b0;
+#2
+Run = 1'b1;
+#4
+Continue = 1'b0;
+#4
+Continue = 1'b1;
+#2
+Continue = 1'b0;
+#4
+Continue = 1'b1;
+#2
+Continue = 1'b0;
+#4
+Continue = 1'b1;
+#2
+Continue = 1'b0;
+#4
+Continue = 1'b1;
+#9
+Reset = 1'b0;
+end
+
+
+
+
+
+
+
+
+endmodule

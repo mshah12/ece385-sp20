@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+U:/Desktop/16-bit\ adders {U:/Desktop/16-bit adders/ripple_adder.sv}
+vlog -sv -work work +incdir+U:/Desktop/16-bit\ adders {U:/Desktop/16-bit adders/HexDriver.sv}
+vlog -sv -work work +incdir+U:/Desktop/16-bit\ adders {U:/Desktop/16-bit adders/full_adder.sv}
+vlog -sv -work work +incdir+U:/Desktop/16-bit\ adders {U:/Desktop/16-bit adders/adder2.sv}
+vlog -sv -work work +incdir+U:/Desktop/16-bit\ adders {U:/Desktop/16-bit adders/lab4_adders_toplevel.sv}
+

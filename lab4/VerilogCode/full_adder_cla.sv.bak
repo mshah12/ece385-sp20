@@ -1,0 +1,4 @@
+module full_adder_cla(input logic A,B,CIN, output logic P,G,S);
+
+
+endmodule

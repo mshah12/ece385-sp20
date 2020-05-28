@@ -1,0 +1,104 @@
+# Reading D:/intelFPGA/modelsim_ase/tcl/vsim/pref.tcl
+# do lab4_adders_toplevel_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+D:/Ishaan/Desktop/16-bit\ adders-20200209T231142Z-001/16-bit\ adders {D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/carry_select_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:19:35 on Feb 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders" D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/carry_select_adder.sv 
+# -- Compiling module carry_select_adder
+# 
+# Top level modules:
+# 	carry_select_adder
+# End time: 21:19:35 on Feb 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Ishaan/Desktop/16-bit\ adders-20200209T231142Z-001/16-bit\ adders {D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/full_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:19:35 on Feb 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders" D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/full_adder.sv 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 21:19:36 on Feb 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Ishaan/Desktop/16-bit\ adders-20200209T231142Z-001/16-bit\ adders {D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/adder2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:19:36 on Feb 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders" D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/adder2.sv 
+# -- Compiling module adder2
+# 
+# Top level modules:
+# 	adder2
+# End time: 21:19:36 on Feb 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Ishaan/Desktop/16-bit\ adders-20200209T231142Z-001/16-bit\ adders {D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/CSA_Middle_Module.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:19:36 on Feb 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders" D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/CSA_Middle_Module.sv 
+# -- Compiling module CSA_Middle_Module
+# 
+# Top level modules:
+# 	CSA_Middle_Module
+# End time: 21:19:36 on Feb 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Ishaan/Desktop/16-bit\ adders-20200209T231142Z-001/16-bit\ adders {D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/four_bit_ripple_adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:19:36 on Feb 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders" D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/four_bit_ripple_adder.sv 
+# -- Compiling module four_bit_ripple_adder
+# 
+# Top level modules:
+# 	four_bit_ripple_adder
+# End time: 21:19:36 on Feb 09,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/Ishaan/Desktop/16-bit\ adders-20200209T231142Z-001/16-bit\ adders {D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/two_bit_mux.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:19:36 on Feb 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders" D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/two_bit_mux.sv 
+# -- Compiling module two_bit_mux
+# 
+# Top level modules:
+# 	two_bit_mux
+# End time: 21:19:37 on Feb 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+D:/Ishaan/Desktop/16-bit\ adders-20200209T231142Z-001/16-bit\ adders {D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/csa_testbench.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:19:38 on Feb 09,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders" D:/Ishaan/Desktop/16-bit adders-20200209T231142Z-001/16-bit adders/csa_testbench.sv 
+# -- Compiling module csa_testbench
+# 
+# Top level modules:
+# 	csa_testbench
+# End time: 21:19:39 on Feb 09,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  csa_testbench
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" csa_testbench 
+# Start time: 21:19:39 on Feb 09,2020
+# Loading sv_std.std
+# Loading work.csa_testbench
+# Loading work.carry_select_adder
+# Loading work.four_bit_ripple_adder
+# Loading work.adder2
+# Loading work.full_adder
+# Loading work.CSA_Middle_Module
+# Loading work.two_bit_mux
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 100 ns
+# End time: 21:20:06 on Feb 09,2020, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 0

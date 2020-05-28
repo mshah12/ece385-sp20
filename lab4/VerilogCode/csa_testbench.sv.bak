@@ -1,0 +1,7 @@
+module csa_testbench();
+timeunit 10ns; //half clock cycle lasts for 10 ns 
+timeprecision 1ns; //round delay to nearest decimal 
+
+carry_select_adder(.*);
+
+endmodule

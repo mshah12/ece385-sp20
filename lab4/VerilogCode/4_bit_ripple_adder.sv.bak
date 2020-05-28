@@ -1,0 +1,5 @@
+module 4_bit_ripple_adder(input logic [4:0] A, B, 
+								output logic [4:0]Sum, 
+								output logic Cout);
+
+endmodule
